@@ -1,4 +1,4 @@
-# 拦接宝 LanJieBao · 2.0 测试版
+# 拦接宝 LanJieBao · 2.1
 
 > 管理手机来电：**拦截骚扰、可疑来电先由 AI 代接、留下留言与录音**，事后推送到手机。
 > Android 应用，**免费使用，闭源**（源码不公开）。
@@ -7,14 +7,37 @@
 
 | 版本 | 适用人群 | 下载 |
 |:---|:---|:---|
-| 内测版 v2.0.0（功能最全，含短信拦截） | 自己人 / 测试者 | [LanJieBao-2.0.0-beta.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.0.0/LanJieBao-2.0.0-beta.apk) |
-| 商店版 v2.0.0（不含短信权限） | 应用商店 / 保守用户 | [LanJieBao-2.0.0-store.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.0.0/LanJieBao-2.0.0-store.apk) |
+| 内测版 v2.1.0（功能最全，含短信拦截） | 自己人 / 测试者 | [LanJieBao-2.1.0-full.apk](https://github.com/puhuiai/lanjiebao/raw/main/releases/LanJieBao-2.1.0-full.apk) |
+| 商店版 v2.1.0（不含短信权限） | 应用商店 / 保守用户 | [LanJieBao-2.1.0-store.apk](https://github.com/puhuiai/lanjiebao/raw/main/releases/LanJieBao-2.1.0-store.apk) |
 
-全部版本见 [Releases](https://github.com/puhuiai/lanjiebao/releases)。
+官方下载页（推荐）：**https://catshield.cn/dl/**
 
-## 2.0 是什么
+历史版本见 [Releases](https://github.com/puhuiai/lanjiebao/releases)。
 
-2.0 是**安全整改版**：把第三方验收报告里的 P1~P7 问题全部收口，不新增功能。
+## 2.1 更新了什么（2026-11-12）
+
+- **新增号码归属地**：每个号码下方直接显示「省 / 市」，内置 51.7 万条离线号段库，**本机查询、不联网、不上传号码**
+- **界面工艺九轮重做**：间距、配色、图标、文案、字体、布局、细节、视觉、动效
+- 设置页「关于与版本」显示升级版号；退出登录按钮改为醒目危险色
+
+### 版本对照
+
+| 检查项 | full（内测版） | store（商店版） |
+|:---|:---|:---|
+| versionName | `2.1.0-full` | `2.1.0-store` |
+| versionCode | 210 | 210 |
+| 字节数 | 1,682,801 | 1,677,121 |
+| SHA-256 | `483403744ae6e14cf5a6638edcd1c99b469cc9403145e992c923fe3fe1fa7ba5` | `92aebc764c50d86f766d076f9f49dddc57eba332f35fef0582e57b07081fc958` |
+| SMS 权限 | 有（内测功能所需） | **无**（商店合规口径） |
+| 签名 | 同一把 release 钥匙，覆盖安装不丢数据 | 同 |
+
+## 归属地口径（请别当成缺陷）
+
+1. 归属地 = 号码**注册地**，不等于持有人当前所在地
+2. 携号转网不改归属地，但运营商名按号段显示
+3. 虚拟运营商号段显示号段归属城市
+4. 400 / 800 / 95x 无地域概念 → **留空**
+5. 号段库时点 2025-02，新放号查不到就留空，**绝不猜**
 
 ## 安装
 
