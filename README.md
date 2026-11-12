@@ -7,12 +7,12 @@
 
 | 版本 | 适用人群 | 下载 |
 |:---|:---|:---|
-| 内测版 v2.1.0（功能最全，含短信拦截） | 自己人 / 测试者 | [LanJieBao-2.1.0-full.apk](https://github.com/puhuiai/lanjiebao/raw/main/releases/LanJieBao-2.1.0-full.apk) |
-| 商店版 v2.1.0（不含短信权限） | 应用商店 / 保守用户 | [LanJieBao-2.1.0-store.apk](https://github.com/puhuiai/lanjiebao/raw/main/releases/LanJieBao-2.1.0-store.apk) |
+| 内测版 v2.1.0（功能最全，含短信拦截） | 自己人 / 测试者 | [LanJieBao-2.1.0-full.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.1.0/LanJieBao-2.1.0-full.apk) |
+| 商店版 v2.1.0（不含短信权限） | 应用商店 / 保守用户 | [LanJieBao-2.1.0-store.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.1.0/LanJieBao-2.1.0-store.apk) |
 
 官方下载页（推荐）：**https://catshield.cn/dl/**
 
-历史版本见 [Releases](https://github.com/puhuiai/lanjiebao/releases)。
+正式发布页（含更新说明与 SHA-256）：[Releases · v2.1.0](https://github.com/puhuiai/lanjiebao/releases/tag/v2.1.0)
 
 ## 2.1 更新了什么（2026-11-12）
 
