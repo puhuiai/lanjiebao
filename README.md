@@ -1,67 +1,49 @@
-# 拦接宝 LanJieBao · 2.1
+![拦接宝 LanJieBao 社交预览](assets/social-preview.png)
 
-> 管理手机来电：**拦截骚扰、可疑来电先由 AI 代接、留下留言与录音**，事后推送到手机。
-> Android 应用，**免费使用，闭源**（源码不公开）。
+# 拦接宝 LanJieBao：Android 来电拦截与 AI 留言助手
 
-## 下载
+拦接宝是一款面向 Android 的来电拦截与留言助手。它可以在本机识别骚扰电话、让 AI 代接可疑来电、保存留言与录音，并显示号码归属地。软件免费使用，闭源发布。
 
-| 版本 | 适用人群 | 下载 |
+[![Latest release](https://img.shields.io/github/v/release/puhuiai/lanjiebao?label=latest)](https://github.com/puhuiai/lanjiebao/releases/latest)
+![Platform](https://img.shields.io/badge/platform-Android-3DDC84)
+![Privacy](https://img.shields.io/badge/privacy-local--first-2ea043)
+
+## 下载与安装
+
+推荐从官方下载页获取最新版：**https://catshield.cn/dl/**
+
+GitHub 备用下载：
+
+| 版本 | 适用场景 | 安装包 |
 |:---|:---|:---|
-| 内测版 v2.1.0（功能最全，含短信拦截） | 自己人 / 测试者 | [LanJieBao-2.1.0-full.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.1.0/LanJieBao-2.1.0-full.apk) |
-| 商店版 v2.1.0（不含短信权限） | 应用商店 / 保守用户 | [LanJieBao-2.1.0-store.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.1.0/LanJieBao-2.1.0-store.apk) |
+| v2.1.0 full | 测试者，包含短信拦截功能 | [LanJieBao-2.1.0-full.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.1.0/LanJieBao-2.1.0-full.apk) |
+| v2.1.0 store | 应用商店与保守用户，不含短信权限 | [LanJieBao-2.1.0-store.apk](https://github.com/puhuiai/lanjiebao/releases/download/v2.1.0/LanJieBao-2.1.0-store.apk) |
 
-官方下载页（推荐）：**https://catshield.cn/dl/**
+安装后按引导开启来电识别、悬浮窗和通知权限。
 
-正式发布页（含更新说明与 SHA-256）：[Releases · v2.1.0](https://github.com/puhuiai/lanjiebao/releases/tag/v2.1.0)
+## 核心功能
 
-## 2.1 更新了什么（2026-11-12）
+- 骚扰电话与可疑号码识别
+- AI 代接来电、保存留言和录音
+- 离线号码归属地查询，内置 51.7 万条号段
+- 来电与留言记录推送
+- 完整版与商店合规版双渠道安装包
 
-- **新增号码归属地**：每个号码下方直接显示「省 / 市」，内置 51.7 万条离线号段库，**本机查询、不联网、不上传号码**
-- **界面工艺九轮重做**：间距、配色、图标、文案、字体、布局、细节、视觉、动效
-- 设置页「关于与版本」显示升级版号；退出登录按钮改为醒目危险色
+## 隐私优先
 
-### 版本对照
-
-| 检查项 | full（内测版） | store（商店版） |
-|:---|:---|:---|
-| versionName | `2.1.0-full` | `2.1.0-store` |
-| versionCode | 210 | 210 |
-| 字节数 | 1,682,801 | 1,677,121 |
-| SHA-256 | `483403744ae6e14cf5a6638edcd1c99b469cc9403145e992c923fe3fe1fa7ba5` | `92aebc764c50d86f766d076f9f49dddc57eba332f35fef0582e57b07081fc958` |
-| SMS 权限 | 有（内测功能所需） | **无**（商店合规口径） |
-| 签名 | 同一把 release 钥匙，覆盖安装不丢数据 | 同 |
-
-## 归属地口径（请别当成缺陷）
-
-1. 归属地 = 号码**注册地**，不等于持有人当前所在地
-2. 携号转网不改归属地，但运营商名按号段显示
-3. 虚拟运营商号段显示号段归属城市
-4. 400 / 800 / 95x 无地域概念 → **留空**
-5. 号段库时点 2025-02，新放号查不到就留空，**绝不猜**
-
-## 安装
-
-1. 手机下载 APK（微信里点开只会提示"用其他应用打开"，请选浏览器或文件管理器）
-2. 允许"安装未知应用"权限
-3. 装完打开「拦接宝」，按引导开启**来电识别 / 悬浮窗 / 通知**权限（缺一项会影响代接）
+号码与通话相关内容在本机处理。号段查询不联网、不上传号码。软件不收集与功能无关的个人信息。
 
 ## 系统要求
 
 - Android 8.0 及以上
-- 建议授予：电话、通讯录、悬浮窗、通知权限
+- 建议授予电话、通讯录、悬浮窗和通知权限
 
-## 反馈（我们很想听你的意见）
+## 反馈
 
-- **问题 / 建议 / 新需求**：直接开 [Issues](https://github.com/puhuiai/lanjiebao/issues/new/choose)
-- 请写清：手机型号 + 系统版本 + 发生了什么 + 期望是什么
-- 我们会定期汇总并回复
+遇到问题请提交 [Issues](https://github.com/puhuiai/lanjiebao/issues/new/choose)，并附手机型号、系统版本、问题现象和复现步骤。
 
-## 说明
+## 授权
 
-- 本应用**免费**，可自由安装使用
-- **闭源**：源码不公开，禁止反编译、二次打包、商业转售
-- 涉及通话与个人数据，所有处理均在本机完成
+拦接宝免费使用，闭源发布。禁止反编译、二次打包和商业转售。
 
----
-
-开发者：汪君 · 普惠AI
+Built by 汪君 · 普惠AI
