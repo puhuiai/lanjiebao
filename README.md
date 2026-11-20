@@ -10,7 +10,9 @@
 
 ## 下载与安装
 
-推荐从官方下载页获取最新版：**https://catshield.cn/dl/**
+推荐从官方下载页获取最新版：**https://puhuiai.com.cn/dl/**
+
+备用入口：https://catshield.cn/dl/ （与主入口是同一份页面，两个域名共用同一份安装包）
 
 GitHub 备用下载：
 
